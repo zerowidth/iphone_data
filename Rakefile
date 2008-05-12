@@ -12,7 +12,8 @@ task :default => 'spec:run'
 PROJ.name = 'iphone_data'
 PROJ.authors = 'Nathan Witmer'
 PROJ.email = 'nwitmer@gmail.com'
-PROJ.url = 'http://github.com'
+PROJ.url = 'http://github.com/aniero/iphone_data'
+PROJ.version = IPhoneData.version
 PROJ.rubyforge.name = ''
 
 PROJ.spec.opts << '--color --format specdoc'
