@@ -4,9 +4,14 @@ iphone_data
 
 == DESCRIPTION:
 
-Script to dump data from an iPhone's synced data
+Script to dump data from an iPhone's sync backup files.
 
-Thanks to masque /at/ pobox.com for his unravel.perl script, http://calmstorm.net/iphone/unravel.perl
+== THANKS TO:
+
+* masque /at/ pobox.com for his unravel.perl script, http://calmstorm.net/iphone/unravel.perl 
+* Tim Pease for bones
+* Ara Howard for main
+* Ben Bleything and Patrick May for plist
 
 == FEATURES/PROBLEMS:
 

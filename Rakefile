@@ -13,7 +13,7 @@ PROJ.name = 'iphone_data'
 PROJ.authors = 'Nathan Witmer'
 PROJ.email = 'nwitmer@gmail.com'
 PROJ.url = 'http://github.com'
-PROJ.rubyforge.name = 'iphone_data'
+PROJ.rubyforge.name = ''
 
 PROJ.spec.opts << '--color --format specdoc'
 
