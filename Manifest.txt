@@ -4,6 +4,7 @@ README.txt
 Rakefile
 bin/iphone_sms
 lib/iphone_sms.rb
+lib/iphone_sms/iphone_data.rb
 spec/iphone_sms_spec.rb
 spec/spec_helper.rb
 tasks/ann.rake
@@ -16,6 +17,4 @@ tasks/rdoc.rake
 tasks/rubyforge.rake
 tasks/setup.rb
 tasks/spec.rake
-tasks/svn.rake
 tasks/test.rake
-test/test_iphone_sms.rb

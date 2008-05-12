@@ -1,10 +1,6 @@
-# $Id$
+$KCODE='u'
 
-# Equivalent to a header guard in C/C++
-# Used to prevent the class/module from being loaded more than once
-unless defined? IphoneSms
-
-module IphoneSms
+module IPhoneSMS
 
   # :stopdoc:
   VERSION = '1.0.0'
@@ -47,10 +43,11 @@ module IphoneSms
     Dir.glob(search_me).sort.each {|rb| require rb}
   end
 
-end  # module IphoneSms
+end
 
-IphoneSms.require_all_libs_relative_to __FILE__
+require "rubygems"
+gem "plist", ">= 3.0.0"
+gem "sqlite3-ruby", ">= 1.2.1"
+%w(plist sqlite3 pathname tempfile).each { |lib| require lib }
 
-end  # unless defined?
-
-# EOF
+IPhoneSMS.require_all_libs_relative_to __FILE__
