@@ -1,4 +1,3 @@
-(in /Users/nathan/Desktop/iphone_data)
 Gem::Specification.new do |s|
   s.name = %q{iphone_data}
   s.version = "0.0.0"
