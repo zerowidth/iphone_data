@@ -4,6 +4,7 @@ README.txt
 Rakefile
 bin/iphone_data
 lib/iphone_data.rb
+lib/iphone_data/command.rb
 lib/iphone_data/iphone.rb
 lib/iphone_data/sms_message.rb
 spec/iphone_data_spec.rb

@@ -7,7 +7,7 @@ module IPhoneData
       def iphones
         @iphones ||= base_dir.children.map do |child|
           next unless child.directory?
-          IPhoneData.new(child)
+          new(child)
         end.compact
       end
       
@@ -44,7 +44,12 @@ module IPhoneData
       data.keys.each do |key|
         FileUtils.mkdir_p(to + File.dirname(key))
         File.open(to + key, "wb") do |out|
-          out.write data[key].read
+          case data[key]
+          when IO
+            out.write data[key].read # .mbackup file data
+          when Hash
+            out.write Plist::Emit.dump(data[key]) # Info.plist, etc.
+          end
         end
       end
     end

@@ -1,7 +1,5 @@
 #!/usr/bin/env ruby
 
-require File.expand_path(
-    File.join(File.dirname(__FILE__), '..', 'lib', 'iphone_sms'))
+require File.expand_path(File.join(File.dirname(__FILE__), '..', 'lib', 'iphone_data'))
 
-require "yaml"
-IPhoneSMS::IPhoneData.iphones.first.sms_messages.each { |m| puts m.to_s(:log) }
+IPhoneData::Command.new(ARGV, ENV).run

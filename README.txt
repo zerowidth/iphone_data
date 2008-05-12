@@ -12,6 +12,7 @@ Thanks to masque /at/ pobox.com for his unravel.perl script, http://calmstorm.ne
 
 * Dump SMS message logs as a log file or an mbox file
 * Dump all of the iPhone backup files into a specified directory
+* Assumes only a single iPhone right now
 
 == SYNOPSIS:
 
@@ -19,12 +20,15 @@ iphone_data <command> [options]
 
 Commands include:
 
+  help - show help
   sms - show sms messages
+  dump - dump the iphone backup data
 
 == REQUIREMENTS:
 
 * plist >= 3.0.0
 * sqlite3-ruby >= 1.2.1
+* main >= 2.8.0
 
 == INSTALL:
 

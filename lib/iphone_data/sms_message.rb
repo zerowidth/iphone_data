@@ -10,6 +10,7 @@ module IPhoneData
       @text = text
       @message_id = msg_id
       
+      # Yeah, so this is ugly. maybe replace with a Struct?
       phone = [iphone.name, iphone.number]
       message = [group_name, address]
       @from, @to = case flags
@@ -29,7 +30,7 @@ module IPhoneData
     def to_s(format = :log)
       case format
       when :log
-        "#{date} [#{to[0]} -> #{from[0]}] #{text.inspect}"
+        "#{date.strftime('%Y-%m-%d %H:%M:%S')} [#{to[0]} -> #{from[0]}] #{text.inspect}"
       when :mbox
         [ "From #{from[1]}  #{date.strftime('%a %b %d %H:%M:%S %Y')}", # mbox message header (?)
           "From: #{format_address(from)}",
