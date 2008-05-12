@@ -2,10 +2,11 @@ History.txt
 Manifest.txt
 README.txt
 Rakefile
-bin/iphone_sms
-lib/iphone_sms.rb
-lib/iphone_sms/iphone_data.rb
-spec/iphone_sms_spec.rb
+bin/iphone_data
+lib/iphone_data.rb
+lib/iphone_data/iphone.rb
+lib/iphone_data/sms_message.rb
+spec/iphone_data_spec.rb
 spec/spec_helper.rb
 tasks/ann.rake
 tasks/bones.rake

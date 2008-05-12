@@ -1,6 +1,6 @@
 $KCODE='u'
 
-module IPhoneSMS
+module IPhoneData
 
   # :stopdoc:
   VERSION = '1.0.0'
@@ -50,4 +50,4 @@ gem "plist", ">= 3.0.0"
 gem "sqlite3-ruby", ">= 1.2.1"
 %w(plist sqlite3 pathname tempfile).each { |lib| require lib }
 
-IPhoneSMS.require_all_libs_relative_to __FILE__
+IPhoneData.require_all_libs_relative_to __FILE__

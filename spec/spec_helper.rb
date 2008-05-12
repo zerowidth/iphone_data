@@ -1,7 +1,5 @@
-# $Id$
-
 require File.expand_path(
-    File.join(File.dirname(__FILE__), %w[.. lib iphone_sms]))
+    File.join(File.dirname(__FILE__), %w[.. lib iphone_data]))
 
 Spec::Runner.configure do |config|
   # == Mock Framework
@@ -13,5 +11,3 @@ Spec::Runner.configure do |config|
   # config.mock_with :flexmock
   # config.mock_with :rr
 end
-
-# EOF

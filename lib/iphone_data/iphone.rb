@@ -1,6 +1,6 @@
-module IPhoneSMS
+module IPhoneData
   
-  class IPhoneData
+  class IPhone
 
     class << self
       
@@ -13,9 +13,9 @@ module IPhoneSMS
       
       private
       
-        def base_dir
-          Pathname.new(File.expand_path("~/Library/Application Support/MobileSync/Backup/"))
-        end
+      def base_dir
+        Pathname.new(File.expand_path("~/Library/Application Support/MobileSync/Backup/"))
+      end
               
     end
 

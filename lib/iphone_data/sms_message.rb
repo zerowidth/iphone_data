@@ -1,4 +1,4 @@
-module IPhoneSMS
+module IPhoneData
   
   class SMSMessage
     

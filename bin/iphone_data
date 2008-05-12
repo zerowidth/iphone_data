@@ -3,6 +3,5 @@
 require File.expand_path(
     File.join(File.dirname(__FILE__), '..', 'lib', 'iphone_sms'))
 
-# Put your code here
-
-# EOF
+require "yaml"
+IPhoneSMS::IPhoneData.iphones.first.sms_messages.each { |m| puts m.to_s(:log) }
