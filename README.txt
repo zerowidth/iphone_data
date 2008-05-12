@@ -1,6 +1,6 @@
 iphone_data
     by Nathan Witmer
-    http://github.com/aniero
+    http://github.com/aniero/iphone_data
 
 == DESCRIPTION:
 
