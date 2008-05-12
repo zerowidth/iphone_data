@@ -1,32 +1,40 @@
-iphone_sms
-    by FIXME (your name)
-    FIXME (url)
+iphone_data
+    by Nathan Witmer
+    http://github.com/aniero
 
 == DESCRIPTION:
 
-FIXME (describe your package)
+Script to dump data from an iPhone's synced data
+
+Thanks to masque /at/ pobox.com for his unravel.perl script, http://calmstorm.net/iphone/unravel.perl
 
 == FEATURES/PROBLEMS:
 
-* FIXME (list of features or problems)
+* Dump SMS message logs as a log file or an mbox file
+* Dump all of the iPhone backup files into a specified directory
 
 == SYNOPSIS:
 
-  FIXME (code sample of usage)
+iphone_data <command> [options]
+
+Commands include:
+
+  sms - show sms messages
 
 == REQUIREMENTS:
 
-* FIXME (list of requirements)
+* plist >= 3.0.0
+* sqlite3-ruby >= 1.2.1
 
 == INSTALL:
 
-* FIXME (sudo gem install, anything else)
+* sudo gem install aniero-iphone_data --source=http://gems.github.com/
 
 == LICENSE:
 
 (The MIT License)
 
-Copyright (c) 2008 FIXME (different license?)
+Copyright (c) 2008 Nathan Witmer
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the

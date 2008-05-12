@@ -5,16 +5,16 @@
 load 'tasks/setup.rb'
 
 ensure_in_path 'lib'
-require 'iphone_sms'
+require 'iphone_data'
 
 task :default => 'spec:run'
 
-PROJ.name = 'iphone_sms'
-PROJ.authors = 'FIXME (who is writing this software)'
-PROJ.email = 'FIXME (your e-mail)'
-PROJ.url = 'FIXME (project homepage)'
-PROJ.rubyforge.name = 'iphone_sms'
+PROJ.name = 'iphone_data'
+PROJ.authors = 'Nathan Witmer'
+PROJ.email = 'nwitmer@gmail.com'
+PROJ.url = 'http://github.com'
+PROJ.rubyforge.name = 'iphone_data'
 
-PROJ.spec.opts << '--color'
+PROJ.spec.opts << '--color --format specdoc'
 
 # EOF
