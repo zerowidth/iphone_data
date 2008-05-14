@@ -18,15 +18,11 @@ module IPhoneData
         description "Format in which to dump the sms messages, One of 'log' or 'mbox'"
         default "log"
         validate { |a| %w(log mbox).include? a }
+        attribute
       end
       
       run do
-        case params['format'].value
-        when "log"
-          IPhoneData::IPhone.iphones.first.sms_messages.each { |m| puts m.to_s(:log) }
-        when "mbox"
-          IPhoneData::IPhone.iphones.first.sms_messages.each { |m| puts m.to_s(:mbox) }
-        end
+        IPhoneData::IPhone.iphones.first.sms_messages.each { |m| puts m.to_s(format.to_sym) }
       end
     end
     
