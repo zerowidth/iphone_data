@@ -46,9 +46,6 @@ module IPhoneData
 end
 
 require "rubygems"
-gem "plist", ">= 3.0.0"
-gem "sqlite3-ruby", ">= 1.2.1"
-gem "main", ">= 2.8.0"
 %w(plist sqlite3 main pathname tempfile).each { |lib| require lib }
 
 IPhoneData.require_all_libs_relative_to __FILE__

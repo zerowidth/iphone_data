@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Nathan Witmer"]
-  s.date = %q{2008-05-11}
+  s.date = %q{2008-05-25}
   s.default_executable = %q{iphone_data}
   s.description = %q{Script to dump data from an iPhone's sync backup files.}
   s.email = %q{nwitmer@gmail.com}
@@ -20,4 +20,8 @@ Gem::Specification.new do |s|
   s.rubyforge_project = %q{}
   s.rubygems_version = %q{1.1.1}
   s.summary = %q{Script to dump data from an iPhone's sync backup files}
+
+  s.add_dependency(%q<plist>, [">= 3.0.0"])
+  s.add_dependency(%q<sqlite3-ruby>, [">= 1.2.1"])
+  s.add_dependency(%q<main>, [">= 2.8.0"])
 end

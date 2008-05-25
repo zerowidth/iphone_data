@@ -18,4 +18,6 @@ PROJ.rubyforge.name = ''
 
 PROJ.spec.opts << '--color --format specdoc'
 
-# EOF
+depend_on "plist", ">= 3.0.0"
+depend_on "sqlite3-ruby", ">= 1.2.1"
+depend_on "main", ">= 2.8.0"
