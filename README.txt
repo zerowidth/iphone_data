@@ -18,6 +18,7 @@ Script to dump data from an iPhone's sync backup files.
 * Dump SMS message logs as a log file or an mbox file
 * Dump all of the iPhone backup files into a specified directory
 * Assumes only a single iPhone right now
+* For SMS logs, only US numbers work correctly, I haven't tested international numbers
 
 == SYNOPSIS:
 
@@ -26,8 +27,8 @@ iphone_data <command> [options]
 Commands include:
 
   help - show help
-  sms - show sms messages
-  dump - dump the iphone backup data
+  sms - dump sms messages in log or threaded mbox format
+  dump - dump the iphone backup data to a specified directory
 
 == REQUIREMENTS:
 

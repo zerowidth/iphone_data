@@ -15,7 +15,7 @@ module IPhoneData
       
       option("format", "f") do
         argument_optional
-        description "Format in which to dump the sms messages, One of 'log' or 'mbox'"
+        description "Format in which to dump the sms messages, One of 'log' or 'mbox'. 'mbox' format is threaded."
         default "log"
         validate { |a| %w(log mbox).include? a }
         attribute # put it in local scope for run
