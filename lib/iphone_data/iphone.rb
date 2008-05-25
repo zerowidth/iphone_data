@@ -45,10 +45,12 @@ module IPhoneData
         FileUtils.mkdir_p(to + File.dirname(key))
         File.open(to + key, "wb") do |out|
           case data[key]
-          when IO
+          when StringIO
             out.write data[key].read # .mbackup file data
           when Hash
             out.write Plist::Emit.dump(data[key]) # Info.plist, etc.
+          else
+            puts "couldn't write out #{key}, don't know how to handle a #{data[key].class}"
           end
         end
       end

@@ -18,7 +18,7 @@ module IPhoneData
         description "Format in which to dump the sms messages, One of 'log' or 'mbox'"
         default "log"
         validate { |a| %w(log mbox).include? a }
-        attribute
+        attribute # put it in local scope for run
       end
       
       run do
@@ -33,11 +33,11 @@ module IPhoneData
       argument("dir") do
         required
         description "Where to put the files (creates the directory if it doesn't exist)"
-        attribute # puts it in local scope
+        attribute
       end
       
       run do 
-        where = Pathname.new(File.expand_path(dir)) # assigning to dir causes problems?
+        where = Pathname.new(File.expand_path(dir))
         phone = IPhoneData::IPhone.iphones.first
         puts "dumping #{phone.name.inspect} to #{where}"
         phone.dump_data(where)
